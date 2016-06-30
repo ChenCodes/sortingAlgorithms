@@ -16,24 +16,24 @@ Now, we put 10 into the space where 5 used to be (thanks to our temporary variab
 Now the array looks like this:[5, 10, 3, 2, 1].
 
 Now, we increment our index in the for loop and look at 10 and 3. Since 10 is greater than 3, we want to perform the swap again.
-[5, 3, 3, 2, 1]
+[5, 3, 3, 2, 1] ->
 [5, 3, 10, 2, 1]
 
 We continue on until the array looks like this:
-[5, 3, 2, 10, 1]
+[5, 3, 2, 10, 1] ->
 [5, 3, 2, 1, 10]
 
 However, we notice that we aren't done yet!
 We will need to continue making passes through the array until the array is completely sorted; only then will we stop. 
 For our second pass, here's what the array will look like:
 
-[3, 5, 2, 1, 10]
-[3, 2, 5, 1, 10]
+[3, 5, 2, 1, 10]->
+[3, 2, 5, 1, 10]->
 [3, 2, 1, 5, 10]
 
 Another iteration:
 
-[2, 3, 1, 5, 10]
+[2, 3, 1, 5, 10]->
 [2, 1, 3, 5, 10]
 
 Another iteration:
