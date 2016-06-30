@@ -2,7 +2,7 @@
 Repo that includes explanations of common sorting algorithms as well as their complexity
 
 
-#####Bubblesort - (ELI5)
+####Bubblesort - (ELI5)
 Given an array or some kind of list of unsorted numbers, we can use bubble sort to sort the elements.
 
 Here's how it works:
