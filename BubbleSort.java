@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class BubbleSorted {
+public class BubbleSort {
 	public static void bubble_sort(int array[]) {
 		//Keep around a variable n that will be assigned to the array's length since we want to iterate in the outer loop a total of the array's length times
 		int n = array.length;
