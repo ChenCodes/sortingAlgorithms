@@ -49,7 +49,18 @@ This is due to having an outer for loop and an inner for loop that loops about n
 All in all, bubble sort is not an ideal algorithm to sort an array with a large number of elements. 
 
 
+####Selection Sort - (ELI5)
+Given this array, we want to perform selection sort on it: [ 5, 4, 1, 3, 2 ].
 
+Selection sort basically takes hold of one element, then looks at all the other elements after it to find the smallest element. If there is a smallest element, then it switches places with that first element we took hold of. 
+
+Example:
+[ 5, 4, 1, 3, 2 ].
+First, 5 is our anchor element. We then go through the rest of the array, and see if the element is smaller than 5. 
+Since 4 is smaller than 5, our index variable gets set to 1. 
+Since 1 is smaller than 4, our index variable gets set to 2.
+Since 3 is greater than 1, we don't set our index variable.
+Since 2 is greater than 1, we don't set our index variable. 
 
 
 
