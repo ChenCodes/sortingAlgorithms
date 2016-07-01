@@ -60,7 +60,40 @@ First, 5 is our anchor element. We then go through the rest of the array, and se
 Since 4 is smaller than 5, our index variable gets set to 1. 
 Since 1 is smaller than 4, our index variable gets set to 2.
 Since 3 is greater than 1, we don't set our index variable.
-Since 2 is greater than 1, we don't set our index variable. 
+Since 2 is greater than 1, we don't set our index variable.
+
+Now since we went through the entire array, we need to perform the swapping.
+1 gets stored into a temporary variable
+Array[2] = 5
+Array[0] = temp_var (which is 1)
+
+Now our array looks like this:
+[1, 4, 5, 3, 2].
+
+We now have 4 as our anchor element. 
+
+Since 5 is greater than 4, we don't set our index variable. 
+Since 3 is less than 4, our index variable gets set to 3.
+Since 2 is less than 3, our index variable gets set to 4.
+
+Now, we need to perform the swap.
+2 gets stored into a temporary variable. 
+Array[4] = Array[1] (this is because our counter is now index 1)
+Array[1] = temp_variable (which is 2)
+
+Our array looks like this:
+
+[1, 2, 5, 3, 4].
+
+If we continue on, our array will then take these forms:
+[1, 2, 3, 5, 4]
+[1, 2, 3, 4, 5]
+Done.
+
+Runtime:
+This algorithm has a runtime of O(n^2).
+This is due to there being n - 1 checks initially, then n - 2, then n - 3, ... 1. When we sum all of this up we have: n(n - 1)/2 which is bounded by O(n^2). 
+
 
 
 
