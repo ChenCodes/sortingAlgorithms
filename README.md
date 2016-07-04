@@ -94,7 +94,40 @@ Runtime:
 This algorithm has a runtime of O(n^2).
 This is due to there being n - 1 checks initially, then n - 2, then n - 3, ... 1. When we sum all of this up we have: n(n - 1)/2 which is bounded by O(n^2). 
 
+####Insertion Sort - (ELI5)
 
+Insertion sort basically works like this: starting with one element in the array (index one), we want to start building up a sorted list in front of it. So if we have an array like this:
+
+[10, 9, 8, 3, 1]
+First, we want to look at 9. We compare 9 with 10, and see that 9 should be before 10. So we do this:
+[9, 10, 8, 3, 1].
+Then, we look at 8.
+Since 8 is less than 10, we swap those two. 
+[9, 8, 10, 3, 1].
+Since 8 is less than 9, we swap those two again.
+[8, 9, 10, 3, 1].
+Now we look at 3.
+Since 3 is less than 10, we swap those two.
+[8, 9, 3, 10, 1].
+Since 3 is less than 9, we swap those two.
+[8, 3, 9, 10, 1].
+Since 3 is less than 8, we swap those two. 
+[3, 8, 9, 10, 1].
+Now, we have just one element left.
+We look at 1, its smaller than 10 so we swap the two.
+[3, 8, 9, 1, 10]
+We now look at 1 and 9. Swap
+[3, 8, 1, 9, 10]
+We now look at 1 and 8. Swap
+[3, 1, 8, 9, 10]
+We now look at 3 and 1. Swap
+[1, 3, 8, 9, 10].
+Done.
+
+Runtime analysis:
+Best case: Already sorted. In this case, it would be linear O(n) because we would be comparing the element with the rightmost element of the already sorted list. 
+
+Worst case: Reverse order. In this case, it would be quadratic as we would need to shift the entire sorted list over every time to put a new element in. 
 
 
 
